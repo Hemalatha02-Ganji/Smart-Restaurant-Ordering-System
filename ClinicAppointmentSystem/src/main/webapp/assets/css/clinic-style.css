@@ -1,0 +1,217 @@
+/* ==========================================================================
+   CLINIC APPOINTMENT SCHEDULING SYSTEM - MODERN HEALTHCARE THEME
+   Developer: Hemalatha Ganji (Roll No: 24761A05S2)
+   ========================================================================== */
+
+:root {
+    --clinic-primary: #0284c7;
+    --clinic-primary-dark: #0369a1;
+    --clinic-secondary: #0d9488;
+    --clinic-accent: #06b6d4;
+    --clinic-dark: #0f172a;
+    --clinic-slate: #334155;
+    --clinic-light: #f8fafc;
+    --clinic-border: #e2e8f0;
+    --clinic-card-bg: #ffffff;
+    --clinic-pending: #f59e0b;
+    --clinic-confirmed: #10b981;
+    --clinic-cancelled: #ef4444;
+    --clinic-completed: #6366f1;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f1f5f9;
+    color: var(--clinic-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar-clinic {
+    background: linear-gradient(135deg, #0369a1 0%, #0d9488 100%);
+    box-shadow: 0 4px 20px rgba(2, 132, 199, 0.15);
+}
+.navbar-clinic .navbar-brand {
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+.navbar-clinic .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.navbar-clinic .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Hero Section */
+.clinic-hero {
+    background: linear-gradient(135deg, rgba(3, 105, 161, 0.95) 0%, rgba(13, 148, 136, 0.9) 100%),
+                url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: #ffffff;
+    padding: 4.5rem 1rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+/* Cards & Surfaces */
+.clinic-card {
+    background: #ffffff;
+    border: 1px solid var(--clinic-border);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.clinic-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card {
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.metric-card.primary { background: linear-gradient(135deg, #0284c7, #0369a1); }
+.metric-card.warning { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.metric-card.success { background: linear-gradient(135deg, #10b981, #059669); }
+.metric-card.danger  { background: linear-gradient(135deg, #ef4444, #dc2626); }
+.metric-card.info    { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+
+.metric-icon {
+    font-size: 2.75rem;
+    opacity: 0.3;
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+}
+
+/* Badges */
+.badge-status {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+}
+.badge-status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+.badge-status-confirmed {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+.badge-status-cancelled {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+.badge-status-completed {
+    background-color: #e0e7ff;
+    color: #3730a3;
+    border: 1px solid #c7d2fe;
+}
+
+/* Buttons */
+.btn-clinic {
+    background-color: var(--clinic-primary);
+    border-color: var(--clinic-primary);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+    transition: all 0.2s ease;
+}
+.btn-clinic:hover {
+    background-color: var(--clinic-primary-dark);
+    border-color: var(--clinic-primary-dark);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.btn-clinic-teal {
+    background-color: var(--clinic-secondary);
+    border-color: var(--clinic-secondary);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+}
+.btn-clinic-teal:hover {
+    background-color: #0f766e;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+/* Auth Cards */
+.auth-container {
+    max-width: 480px;
+    margin: 3rem auto;
+}
+
+.auth-header {
+    background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+}
+
+/* Printable Medical Slip */
+.medical-slip {
+    background: #ffffff;
+    border: 2px dashed #94a3b8;
+    border-radius: 16px;
+    padding: 2.5rem;
+    max-width: 720px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.slip-header {
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.slip-token {
+    background: #e0f2fe;
+    border: 2px solid #38bdf8;
+    color: #0369a1;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+@media print {
+    body {
+        background-color: #ffffff !important;
+    }
+    .navbar-clinic, .no-print, footer {
+        display: none !important;
+    }
+    .medical-slip {
+        border: 2px solid #000000 !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}

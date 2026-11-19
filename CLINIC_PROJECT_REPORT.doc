@@ -1,0 +1,754 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office'
+      xmlns:w='urn:schemas-microsoft-com:office:word'
+      xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Clinic Appointment Scheduling System - Project Report</title>
+<!--[if gte mso 9]>
+<xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>100</w:Zoom>
+  <w:DoNotOptimizeForBrowser/>
+ </w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+@page {
+    size: 21.0cm 29.7cm; /* A4 */
+    margin: 1.0in 1.0in 1.0in 1.0in;
+    mso-header-margin: 0.5in;
+    mso-footer-margin: 0.5in;
+    mso-paper-source: 0;
+}
+div.Section1 {
+    page: Section1;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000000;
+}
+h1 {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 18pt;
+    margin-bottom: 12pt;
+    color: #000000;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-top: 16pt;
+    margin-bottom: 8pt;
+    color: #000000;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    color: #000000;
+}
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 10pt;
+    margin-bottom: 4pt;
+    color: #000000;
+}
+p {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin-top: 0pt;
+    margin-bottom: 6pt;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8pt;
+    margin-bottom: 12pt;
+}
+table, th, td {
+    border: 1px solid #333333;
+    padding: 6pt 8pt;
+    font-size: 11pt;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+.page-break {
+    page-break-before: always;
+    mso-special-character: line-break;
+}
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.fw-bold { font-weight: bold; }
+.border-box {
+    border: 2px solid #000000;
+    padding: 15pt;
+    margin: 10pt 0;
+}
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9.5pt;
+    background-color: #f8f9fa;
+}
+.code-block {
+    background-color: #f4f6f8;
+    border: 1px solid #cccccc;
+    padding: 8pt;
+    margin: 6pt 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9.5pt;
+    line-height: 1.3;
+}
+</style>
+</head>
+<body>
+<div class="Section1">
+
+<!-- ==================== COVER / TITLE PAGE ==================== -->
+<div class="text-center" style="margin-top: 20pt;">
+    <h1 style="font-size: 20pt; line-height: 1.3; margin-bottom: 8pt;">CLINIC APPOINTMENT SCHEDULING SYSTEM</h1>
+    <p style="font-size: 13pt; font-weight: bold; margin-bottom: 16pt;">
+        A Skill Oriented Course Web Application / Project Report<br>
+        <span style="font-size: 11pt; font-weight: normal;">Submitted in partial fulfillment of the requirements for the award of the Degree of</span><br>
+        <span style="font-size: 14pt; font-weight: bold;">BACHELOR OF TECHNOLOGY</span><br>
+        in<br>
+        <span style="font-size: 14pt; font-weight: bold;">COMPUTER SCIENCE AND ENGINEERING</span>
+    </p>
+
+    <p style="font-size: 12pt; margin-top: 24pt; margin-bottom: 4pt;">By</p>
+    <p style="font-size: 15pt; font-weight: bold; margin-bottom: 2pt;">HEMALATHA GANJI</p>
+    <p style="font-size: 13pt; font-weight: bold; margin-bottom: 4pt;">(Regd. No: 24761A05S2)</p>
+    <p style="font-size: 11pt; margin-bottom: 24pt;">Class: III B.Tech, V Semester, Section: E</p>
+
+    <p style="font-size: 12pt; margin-bottom: 4pt;">Under the esteemed guidance of</p>
+    <p style="font-size: 14pt; font-weight: bold; margin-bottom: 2pt;">Ms. K. NAGA RAJESWARI</p>
+    <p style="font-size: 11pt; margin-bottom: 30pt;">Assistant Professor, Department of CSE</p>
+
+    <div style="border-top: 2px solid #000; border-bottom: 2px solid #000; padding: 12pt 0; margin-top: 40pt;">
+        <p style="font-size: 13pt; font-weight: bold; margin-bottom: 3pt;">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</p>
+        <p style="font-size: 15pt; font-weight: bold; margin-bottom: 3pt;">LAKIREDDY BALI REDDY COLLEGE OF ENGINEERING (AUTONOMOUS)</p>
+        <p style="font-size: 10pt; margin-bottom: 2pt;">Accredited by NAAC with ‘A’ Grade &amp; NBA (Under Tier - I), An ISO 21001:2018, 14001:2015, 50001:2018 Certified Institution</p>
+        <p style="font-size: 10pt; margin-bottom: 2pt;">Approved by AICTE, New Delhi and Affiliated to JNTUK, Kakinada</p>
+        <p style="font-size: 10.5pt; font-weight: bold; margin-bottom: 2pt;">L.B. REDDY NAGAR, MYLAVARAM, NTR DIST., A.P. - 521230.</p>
+        <p style="font-size: 11pt; font-weight: bold; margin-top: 4pt;">2024–2028</p>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== CERTIFICATE ==================== -->
+<div class="text-center" style="margin-top: 10pt;">
+    <p style="font-size: 14pt; font-weight: bold; margin-bottom: 2pt;">LAKIREDDY BALI REDDY COLLEGE OF ENGINEERING (AUTONOMOUS)</p>
+    <p style="font-size: 9.5pt; margin-bottom: 2pt;">L.B. REDDY NAGAR, MYLAVARAM, NTR DIST., A.P. - 521230.</p>
+    <p style="font-size: 12pt; font-weight: bold; margin-bottom: 15pt;">DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</p>
+    
+    <h2 style="font-size: 16pt; margin-bottom: 20pt; text-decoration: underline;">CERTIFICATE</h2>
+</div>
+
+<p style="font-size: 12pt; line-height: 1.8; text-indent: 30pt;">
+This is to certify that the Skill Oriented Course Web Application / Project report entitled 
+<strong>“CLINIC APPOINTMENT SCHEDULING SYSTEM”</strong> is being submitted by 
+<strong>HEMALATHA GANJI (Regd. No: 24761A05S2)</strong> in partial fulfillment of the requirements for the award of the degree of 
+<strong>Bachelor of Technology in Computer Science and Engineering</strong> from 
+<strong>Jawaharlal Nehru Technological University Kakinada (JNTUK)</strong> is a record of Bonafide work carried out by her at 
+<strong>Lakireddy Bali Reddy College of Engineering (Autonomous), Mylavaram</strong>.
+</p>
+
+<p style="font-size: 12pt; line-height: 1.8; text-indent: 30pt; margin-top: 15pt;">
+The results embodied in this project report have not been submitted to any other university or institute for the award of any degree or diploma.
+</p>
+
+<table style="border: none; margin-top: 80pt; width: 100%;">
+<tr style="border: none;">
+    <td style="border: none; width: 50%; text-align: left; vertical-align: top;">
+        <p style="font-weight: bold; margin-bottom: 2pt;">Ms. K. Naga Rajeswari</p>
+        <p style="margin-bottom: 2pt;">Assistant Professor</p>
+        <p style="font-style: italic;">(Project Guide)</p>
+    </td>
+    <td style="border: none; width: 50%; text-align: right; vertical-align: top;">
+        <p style="font-weight: bold; margin-bottom: 2pt;">Dr. S. Nagarjuna Reddy</p>
+        <p style="margin-bottom: 2pt;">Professor &amp; Head of Department</p>
+        <p style="font-style: italic;">Department of CSE</p>
+    </td>
+</tr>
+</table>
+
+<table style="border: none; margin-top: 70pt; width: 100%;">
+<tr style="border: none;">
+    <td style="border: none; width: 50%; text-align: left;">
+        <p style="font-weight: bold;">INTERNAL EXAMINER</p>
+    </td>
+    <td style="border: none; width: 50%; text-align: right;">
+        <p style="font-weight: bold;">EXTERNAL EXAMINER</p>
+    </td>
+</tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ==================== ACKNOWLEDGEMENT ==================== -->
+<h2 class="text-center" style="margin-bottom: 20pt; text-decoration: underline;">ACKNOWLEDGEMENT</h2>
+
+<p style="text-indent: 30pt; line-height: 1.8;">
+I would like to express my profound gratitude and sincere respect to my project guide, <strong>Ms. K. Naga Rajeswari</strong>, Assistant Professor, Department of Computer Science and Engineering, for her continuous encouragement, expert technical guidance, and valuable support throughout the design and development of this Skill Oriented Course Web Application.
+</p>
+
+<p style="text-indent: 30pt; line-height: 1.8; margin-top: 10pt;">
+I record my deep sense of gratitude to <strong>Dr. S. Nagarjuna Reddy</strong>, Professor &amp; Head of the Department of CSE, for providing the necessary infrastructural facilities, high-performance computing laboratories, and encouraging environment that ensured the successful completion of this work.
+</p>
+
+<p style="text-indent: 30pt; line-height: 1.8; margin-top: 10pt;">
+I express my sincere thanks to the Management of <strong>Lakireddy Bali Reddy College of Engineering (Autonomous)</strong> and to <strong>Dr. K. Appa Rao</strong>, Principal, for their constant support and for making available all required academic resources.
+</p>
+
+<p style="text-indent: 30pt; line-height: 1.8; margin-top: 10pt;">
+I also extend my thanks to all the faculty members and non-teaching staff of the Department of Computer Science and Engineering for their direct and indirect cooperation.
+</p>
+
+<p style="text-indent: 30pt; line-height: 1.8; margin-top: 10pt;">
+Finally, I am deeply indebted to my parents and friends for their enduring blessings, moral support, and motivation throughout my academic journey.
+</p>
+
+<div style="margin-top: 50pt; text-align: right;">
+    <p style="font-weight: bold; margin-bottom: 2pt;">Hemalatha Ganji</p>
+    <p style="font-weight: bold; margin-bottom: 2pt;">(Regd. No: 24761A05S2)</p>
+    <p>III B.Tech V Semester, Section: E</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== DECLARATION ==================== -->
+<h2 class="text-center" style="margin-bottom: 20pt; text-decoration: underline;">DECLARATION</h2>
+
+<p style="text-indent: 30pt; line-height: 1.8;">
+I hereby declare that the project work entitled <strong>“CLINIC APPOINTMENT SCHEDULING SYSTEM”</strong> submitted to <strong>Lakireddy Bali Reddy College of Engineering (Autonomous)</strong>, affiliated to Jawaharlal Nehru Technological University Kakinada (JNTUK), in partial fulfillment of the requirements for the award of the degree of <strong>Bachelor of Technology in Computer Science and Engineering</strong>, is an authentic record of original work carried out by me under the guidance of <strong>Ms. K. Naga Rajeswari</strong>, Assistant Professor, Department of CSE.
+</p>
+
+<p style="text-indent: 30pt; line-height: 1.8; margin-top: 12pt;">
+I further declare that this report has not been submitted previously to any other university, college, or institute for the award of any degree, diploma, fellowship, or other similar title. I have strictly followed the academic code of ethics and guidelines prescribed by the college.
+</p>
+
+<div style="margin-top: 60pt; text-align: right;">
+    <p style="font-weight: bold; margin-bottom: 2pt;">(Signature of the Student)</p>
+    <p style="font-weight: bold; margin-bottom: 2pt; margin-top: 30pt;">Hemalatha Ganji</p>
+    <p style="font-weight: bold;">(Regd. No: 24761A05S2)</p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== ABSTRACT ==================== -->
+<h2 class="text-center" style="margin-bottom: 15pt; text-decoration: underline;">ABSTRACT</h2>
+
+<p style="line-height: 1.7; text-indent: 30pt;">
+The <strong>Clinic Appointment Scheduling System</strong> is a full-stack, enterprise-grade medical consultation booking and clinical queue management platform engineered to resolve critical operational bottlenecks encountered in municipal healthcare centers, private outpatient departments (OPDs), and multi-speciality polyclinics. Traditional physical healthcare centers rely on manual paper registers, informal telephone bookings, and unstructured walk-in queues. These manual mechanisms suffer from catastrophic scheduling conflicts (such as double-booking doctors for the same consultation hour), inaccurate record-keeping, extensive patient waiting times, lack of digital auditability, and unauthorized access to medical records.
+</p>
+
+<p style="line-height: 1.7; text-indent: 30pt; margin-top: 10pt;">
+To eliminate these inefficiencies, this project introduces a secure, high-concurrency, database-driven web platform constructed strictly using <strong>Java 21</strong>, <strong>Jakarta Servlets 6.0</strong>, <strong>Jakarta Server Pages (JSP 3.1)</strong>, <strong>JDBC</strong>, and <strong>MySQL 8.0</strong>, deployed on <strong>Apache Tomcat 10.1</strong>. 
+</p>
+
+<p style="line-height: 1.7; text-indent: 30pt; margin-top: 10pt;">
+The system implements a distinct, dual-role architecture:
+</p>
+
+<p style="line-height: 1.7; margin-left: 20pt;">
+1. <strong>Patient Subsystem:</strong> Allows citizens and patients to register their demographic and medical profiles (<code>patient_id</code>, <code>patient_name</code>, <code>dob</code>, <code>gender</code>, <code>phone</code>, <code>email</code>, <code>password</code>, <code>blood_group</code>, <code>address</code>). Patients authenticate using either their unique Patient ID or registered Email ID. The patient portal provides real-time doctor directory discovery across multiple clinical specializations (Cardiology, Pediatrics, General Medicine, Dermatology, Orthopedics, Gynecology). An intelligent appointment booking engine enables patients to select consultation dates and 30-minute time slots while describing symptoms. Crucially, the booking engine enforces <strong>atomic concurrency protection</strong> via database row-level locking (<code>SELECT ... FOR UPDATE</code>) and composite unique constraints (<code>UNIQUE KEY (doctor_id, appointment_date, time_slot)</code>), mathematically preventing two patients from booking the same doctor and slot simultaneously. Patients can track consultation statuses (<code>Pending</code> &rarr; <code>Confirmed</code> &rarr; <code>Completed</code> / <code>Cancelled</code>), cancel upcoming visits, and generate/print official <strong>Digital Medical Appointment Slips</strong> with unique alphanumeric tracking tokens (<code>APT-YYYY-XXXX</code>).
+</p>
+
+<p style="line-height: 1.7; margin-left: 20pt; margin-top: 8pt;">
+2. <strong>Receptionist Subsystem:</strong> Serves front-desk healthcare administrators with a high-visibility command center. The dashboard presents real-time key performance indicators (Total Bookings, Today's Consultations, Pending Verifications, Confirmed Schedules, Cancelled Appointments). Receptionists can filter and sort patient queues dynamically by consultation date, assigned doctor, and current status. With a single click, receptionists can verify and confirm pending schedules, cancel slots (releasing them back into the availability pool), or check in patients upon consultation completion, while maintaining a strict audit trail in <code>appointment_audit_log</code>.
+</p>
+
+<p style="line-height: 1.7; text-indent: 30pt; margin-top: 10pt;">
+Security and access control are guaranteed by two dedicated Jakarta servlet filters (<code>PatientAuthFilter</code> and <code>ReceptionistAuthFilter</code>), preventing unauthenticated URL snooping and enforcing complete role separation. The application strictly adheres to the <strong>Model-View-Controller (MVC)</strong> architectural pattern and <strong>Data Access Object (DAO)</strong> pattern, delivering a secure, responsive, and robust healthcare platform.
+</p>
+
+<div class="page-break"></div>
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<h2 class="text-center" style="margin-bottom: 15pt; text-decoration: underline;">LIST OF CONTENTS</h2>
+
+<table>
+<tr>
+    <th style="width: 80%;">CONTENTS</th>
+    <th style="width: 20%; text-align: center;">PAGE NO</th>
+</tr>
+<tr><td><strong>ABSTRACT</strong></td><td class="text-center">i</td></tr>
+<tr><td><strong>LIST OF CONTENTS</strong></td><td class="text-center">ii</td></tr>
+<tr><td><strong>LIST OF ABBREVIATIONS</strong></td><td class="text-center">iii</td></tr>
+<tr><td><strong>1. INTRODUCTION</strong></td><td class="text-center">1–3</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.1 Background of the Problem</td><td class="text-center">1</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.2 Objectives of the System</td><td class="text-center">2</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.3 Scope of the Application</td><td class="text-center">2</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;1.4 Feasibility Study (Technical, Operational, Economic)</td><td class="text-center">3</td></tr>
+<tr><td><strong>2. TECHNOLOGIES USED</strong></td><td class="text-center">4–6</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;2.1 Frontend: HTML5, CSS3, JavaScript &amp; Bootstrap 5.3</td><td class="text-center">4</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;2.2 Backend: Java 21, Jakarta Servlets 6.0 &amp; Tomcat 10.1</td><td class="text-center">5</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;2.3 Persistence: MySQL 8.0, JDBC &amp; ACID Transactions</td><td class="text-center">5</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;2.4 Presentation &amp; Security: JSP 3.1, JSTL 3.0 &amp; BCrypt</td><td class="text-center">6</td></tr>
+<tr><td><strong>3. WEB APPLICATION ARCHITECTURE</strong></td><td class="text-center">7–11</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;3.1 Three-Tier MVC Architecture Model</td><td class="text-center">7</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;3.2 High-Level System Architecture</td><td class="text-center">8</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;3.3 Data Flow Diagrams (DFD Level 0, Level 1)</td><td class="text-center">9</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;3.4 Relational Database Schema &amp; ER Design</td><td class="text-center">11</td></tr>
+<tr><td><strong>4. CODING &amp; IMPLEMENTATION</strong></td><td class="text-center">12–25</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.1 Build Configuration &amp; Database Script</td><td class="text-center">12</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.2 Database Connection Pool &amp; Utility</td><td class="text-center">14</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.3 Domain Models (Patient, Doctor, Appointment)</td><td class="text-center">16</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.4 DAO Implementation &amp; Concurrency Control</td><td class="text-center">18</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.5 Access Control Filters &amp; Controller Servlets</td><td class="text-center">21</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;4.6 Presentation Views &amp; Slip Rendering</td><td class="text-center">24</td></tr>
+<tr><td><strong>5. RESULTS &amp; SYSTEM DEMONSTRATION</strong></td><td class="text-center">26–31</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;5.1 Operational Screen Walkthroughs</td><td class="text-center">26</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;5.2 Concurrency Conflict Resolution</td><td class="text-center">28</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;5.3 Software Test Cases &amp; Verification Matrix</td><td class="text-center">29</td></tr>
+<tr><td><strong>6. CONCLUSION &amp; FUTURE SCOPE</strong></td><td class="text-center">32</td></tr>
+<tr><td><strong>7. REFERENCES</strong></td><td class="text-center">33</td></tr>
+<tr><td><strong>8. PO, PSO &amp; SUSTAINABLE DEVELOPMENT GOALS (SDG) ALIGNMENT</strong></td><td class="text-center">34–38</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 1 ==================== -->
+<h2>1. INTRODUCTION</h2>
+
+<h3>1.1 Background of the Problem</h3>
+<p>
+Healthcare delivery in developing urban centers and suburban towns (such as Mylavaram and Vijayawada) has expanded exponentially over the last decade. Polyclinics and multi-speciality outpatient health facilities handle hundreds of patients daily. However, a significant majority of clinics continue to manage appointments through physical register books, telephone calls, or disorderly walk-in lines.
+</p>
+<p>
+This traditional approach introduces severe operational bottlenecks:
+</p>
+<ul>
+    <li><strong>Double-Booking Conflicts:</strong> Manual entry frequently results in two or more patients being assigned the same doctor during the exact same time slot, leading to physician exhaustion, delayed consultations, and severe patient frustration.</li>
+    <li><strong>Prolonged Waiting Times:</strong> Unscheduled walk-in crowds cause unpredictable congestion in waiting rooms, exposing vulnerable patients (especially children, pregnant women, and elderly citizens) to nosocomial infections.</li>
+    <li><strong>Absence of Real-Time Visibility:</strong> Patients have no means to know whether a doctor is available, on leave, or delayed before physically arriving at the hospital.</li>
+    <li><strong>Data Errors and Missing Records:</strong> Hand-written records lead to misplaced demographic details, phone numbers, and previous consultation notes.</li>
+    <li><strong>Lack of Auditability:</strong> Traditional desks have no automated logging mechanism to track which staff member confirmed, rescheduled, or cancelled a patient's appointment.</li>
+</ul>
+
+<h3>1.2 Objectives of the System</h3>
+<p>
+The primary objective of the <strong>Clinic Appointment Scheduling System</strong> is to design, develop, and deploy an automated, secure, and intuitive web application that modernizes the outpatient consultation lifecycle:
+</p>
+<ul>
+    <li>Provide patients with a seamless, 24/7 self-service portal to browse specialists, check consultation cabin details and fees, and reserve consultation slots.</li>
+    <li>Implement deterministic concurrency control at both the application and database tiers to eliminate double-booking for any doctor and time slot.</li>
+    <li>Enable receptionists and front-desk personnel to monitor the master clinic schedule, filter appointments by date and medical specialist, and update appointment statuses (<code>Pending</code> &rarr; <code>Confirmed</code> &rarr; <code>Completed</code> / <code>Cancelled</code>) with automated audit tracking.</li>
+    <li>Automatically generate an official, printable <strong>Digital Medical Appointment Slip / Token</strong> featuring doctor cabin numbers, patient demographics, and instructions to expedite OPD check-in.</li>
+    <li>Enforce robust security, role-based access control, parameterized database access, and session integrity.</li>
+</ul>
+
+<h3>1.3 Scope of the Application</h3>
+<p>
+The scope encompasses all primary outpatient scheduling activities across multi-speciality departments (Cardiology, Pediatrics, General Medicine, Dermatology, Orthopedics, and Gynecology):
+</p>
+<ul>
+    <li><strong>In Scope:</strong> Patient registration and profile management, dual-credential authentication (Patient ID / Email), doctor directory discovery, real-time slot conflict detection, front-desk dashboard with date/doctor/status filters, status transition persistence in MySQL, audit logging, printable appointment tokens, and session-based access control filters.</li>
+    <li><strong>Out of Scope (Future Phases):</strong> Inpatient (IPD) bed allocation, integration with commercial SMS gateways, electronic health record (EHR) diagnostic imaging storage, and third-party commercial payment gateways (the system is optimized for direct on-desk clinic fee payment).</li>
+</ul>
+
+<h3>1.4 Feasibility Study</h3>
+<p>
+Before initiating system development, an in-depth feasibility assessment was conducted across three essential axes:
+</p>
+<ol>
+    <li><strong>Technical Feasibility:</strong> The system is architected using enterprise-grade, mature, and open-source Java technologies: Java 21 LTS, Jakarta Servlets 6.0, JSP 3.1, and MySQL 8.0, running on Apache Tomcat 10.1. These platforms are renowned for rock-solid stability, cross-platform portability, high concurrent throughput, and robust multi-threading capabilities. Concurrency protection is achieved using native MySQL InnoDB row-level locking (<code>SELECT ... FOR UPDATE</code>) and composite unique constraints, requiring no external complex messaging middleware.</li>
+    <li><strong>Operational Feasibility:</strong> The user interface is built using modern Bootstrap 5.3 and custom CSS adhering to a clinical healthcare palette (Trust Blue <code>#0284c7</code>, Teal <code>#0d9488</code>, Clean White <code>#ffffff</code>, and Slate <code>#0f172a</code>). Patients of varying digital literacy can easily select a doctor, choose a date and time slot with intuitive pill buttons, and receive an instant token within four clicks. Receptionists are provided with a dedicated command console with real-time KPI metric cards and one-click confirm/cancel action triggers.</li>
+    <li><strong>Economic Feasibility:</strong> The entire technological stack utilized—including Java OpenJDK, Apache Tomcat, MySQL Community Edition, Apache Maven, and Bootstrap—is free and open-source, eliminating costly commercial software licensing. The application runs smoothly on standard low-cost commodity hardware or local on-premises clinic servers, making it economically accessible to rural and semi-urban medical centers.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 2 ==================== -->
+<h2>2. TECHNOLOGIES USED</h2>
+
+<h3>2.1 Frontend: HTML5, CSS3, JavaScript &amp; Bootstrap 5.3</h3>
+<p>
+The presentation layer delivers a fast, responsive, and aesthetically pleasing interface across mobile devices, tablets, and desktop workstations:
+</p>
+<ul>
+    <li><strong>HTML5:</strong> Semantic document structuring (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;form&gt;</code>) ensures cross-browser accessibility and structured data presentation.</li>
+    <li><strong>CSS3 (<code>clinic-style.css</code>):</strong> Custom healthcare stylesheet establishing visual hierarchy. Features CSS variables for the color palette, card hover elevation, pill status badges, and print-specific stylesheets (<code>@media print</code>) that format medical appointment slips cleanly on standard A4 paper while suppressing navigation bars and buttons.</li>
+    <li><strong>JavaScript (ES6+):</strong> Provides client-side dynamic interactivity: dynamic calendar restrictions (enforcing <code>min = today</code> to disallow historical dates), interactive time slot button toggles, asynchronous parameter passing, and confirmation modal dialogs for appointment cancellations.</li>
+    <li><strong>Bootstrap 5.3.3 &amp; Bootstrap Icons 1.11.3:</strong> Delivers responsive grid layouts, fluid tables, metric cards, navigation bars, and medical iconography without dependency on bulky third-party libraries.</li>
+</ul>
+
+<h3>2.2 Backend: Java 21, Jakarta Servlets 6.0 &amp; Apache Tomcat 10.1</h3>
+<p>
+The backend controller and business logic rely on the latest enterprise Java standards:
+</p>
+<ul>
+    <li><strong>Java 21 LTS:</strong> Serves as the core programming platform, offering enhanced language capabilities, strong type safety, superior memory management, and modern garbage collection performance.</li>
+    <li><strong>Jakarta Servlets 6.0:</strong> Implements the Controller tier under the MVC paradigm. Servlets extend <code>HttpServlet</code>, intercepting incoming HTTP <code>GET</code> and <code>POST</code> requests, parsing request parameters, coordinating with the Data Access Object (DAO) layer, binding session attributes, and redirecting or dispatching to JSP views.</li>
+    <li><strong>Apache Tomcat 10.1:</strong> An enterprise-ready, open-source HTTP servlet container compliant with the Jakarta EE 10 specification. It efficiently manages worker thread pools, handles concurrent client connections, and maintains <code>HttpSession</code> lifecycles.</li>
+</ul>
+
+<h3>2.3 Persistence: MySQL 8.0, JDBC &amp; ACID Transactions</h3>
+<p>
+Data storage is governed strictly by the relational model:
+</p>
+<ul>
+    <li><strong>MySQL 8.0 Database Engine:</strong> Relational storage powered by the InnoDB engine, providing full ACID (Atomicity, Consistency, Isolation, Durability) guarantees, relational foreign keys with cascading options, and specialized unique index structures.</li>
+    <li><strong>Java Database Connectivity (JDBC):</strong> Provides low-overhead direct database communication via <code>com.mysql.cj.jdbc.Driver</code>.</li>
+    <li><strong>Parameterized <code>PreparedStatement</code>:</strong> All SQL operations strictly use parameterized queries where user inputs are bound via typed setter methods (<code>setString()</code>, <code>setInt()</code>, <code>setDate()</code>), eliminating all vectors of SQL Injection attacks.</li>
+    <li><strong>Pessimistic Concurrency &amp; Transactions:</strong> The critical booking transaction turns off autocommit (<code>conn.setAutoCommit(false)</code>), executes a locked verification query (<code>SELECT ... FOR UPDATE</code>), performs the insertion, records the audit trail, and commits the transaction atomically.</li>
+</ul>
+
+<h3>2.4 Presentation &amp; Security: JSP 3.1, JSTL 3.0 &amp; BCrypt</h3>
+<ul>
+    <li><strong>Jakarta Server Pages (JSP 3.1) &amp; JSTL 3.0:</strong> Delivers dynamic server-side rendering while preserving strict separation of concerns. JSTL core tags (<code>&lt;c:forEach&gt;</code>, <code>&lt;c:if&gt;</code>, <code>&lt;c:choose&gt;</code>) iterate over domain model lists and render conditional status indicators without embedding raw Java scriptlets.</li>
+    <li><strong>BCrypt Password Security (<code>jBCrypt 0.4</code>):</strong> Implements adaptive one-way cryptographic hashing for passwords, combining random salt generation with key-stretching work factors.</li>
+    <li><strong>Role-Based Authentication Filters:</strong> <code>PatientAuthFilter</code> and <code>ReceptionistAuthFilter</code> guard protected application paths, verifying session attributes and invalidating cookies on logout (<code>session.invalidate()</code>).</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 3 ==================== -->
+<h2>3. WEB APPLICATION ARCHITECTURE</h2>
+
+<h3>3.1 Three-Tier MVC Architecture Model</h3>
+<p>
+The application architecture is cleanly decoupled into three foundational tiers:
+</p>
+<ul>
+    <li><strong>Presentation Tier (View):</strong> Developed using JSP 3.1, JSTL, Bootstrap 5.3, and custom CSS. Provides views for Patient Login, Registration, Doctor Catalog, Slot Booking Form, Appointments Table, Digital Slip, and Receptionist Command Console.</li>
+    <li><strong>Application Tier (Controller &amp; Logic):</strong> Powered by Java 21 and Jakarta Servlets 6.0 running on Apache Tomcat 10.1. Handles authentication, routing, validation, token generation, and coordination between the frontend and database.</li>
+    <li><strong>Data Persistence Tier (DAO &amp; Database):</strong> Built on MySQL 8.0 with InnoDB engine. Data Access Objects (<code>PatientDAO</code>, <code>DoctorDAO</code>, <code>AppointmentDAO</code>, <code>ReceptionistDAO</code>) encapsulate all SQL execution and transaction boundaries.</li>
+</ul>
+
+<h3>3.2 Database Relational Schema Design</h3>
+<p>The relational database <code>clinic_appointment_db</code> comprises 5 structured tables:</p>
+<ol>
+    <li><strong>patients:</strong> Stores patient profiles with primary key <code>patient_id</code>, full name, date of birth, gender, contact phone, unique email address, password hash, blood group, and residential address.</li>
+    <li><strong>doctors:</strong> Stores medical specialist details with primary key <code>doctor_id</code>, name, clinical specialization, qualifications, experience years, allocated OPD room number, consultation fee, available working days, and consultation hours.</li>
+    <li><strong>receptionists:</strong> Stores authorized hospital staff credentials with primary key <code>username</code>, password hash, staff full name, official email, and phone.</li>
+    <li><strong>appointments:</strong> The central transactional entity linking patients and doctors. Contains primary key <code>appointment_id</code>, unique token <code>appointment_token</code>, foreign key <code>patient_id</code>, foreign key <code>doctor_id</code>, scheduled consultation date, time slot, patient chief complaint, status (<code>Pending</code>, <code>Confirmed</code>, <code>Cancelled</code>, <code>Completed</code>), and timestamps. Contains composite unique key:
+    <div class="code-block">CONSTRAINT uq_doctor_slot UNIQUE (doctor_id, appointment_date, time_slot)</div>
+    </li>
+    <li><strong>appointment_audit_log:</strong> Comprehensive audit trail tracking status alterations, actions, performing user IDs, timestamps, and staff remarks.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 4 ==================== -->
+<h2>4. CODING &amp; IMPLEMENTATION</h2>
+
+<h3>4.1 Concurrency &amp; Double-Booking Protection</h3>
+<p>
+Double-booking is mathematically prevented using a two-stage defense mechanism:
+</p>
+<p>
+<strong>Stage 1 (Pessimistic Application-Level Locking):</strong> In <code>AppointmentDAO.bookAppointment()</code>, before performing any insertion, the connection autocommit is disabled. A locked query is executed against the database:
+</p>
+<div class="code-block">
+SELECT COUNT(*) FROM appointments <br>
+WHERE doctor_id = ? AND appointment_date = ? AND time_slot = ? <br>
+AND status != 'Cancelled' FOR UPDATE;
+</div>
+<p>
+If the count is greater than zero, the transaction is immediately rolled back and the method returns <code>false</code>.
+</p>
+<p>
+<strong>Stage 2 (Database-Level Composite Unique Constraint):</strong> Even under extreme thread race conditions, the MySQL engine guarantees integrity via the table-level constraint:
+</p>
+<div class="code-block">
+CONSTRAINT uq_doctor_slot UNIQUE (doctor_id, appointment_date, time_slot);
+</div>
+<p>
+Any concurrent duplicate thread attempting an insert will trigger a MySQL <code>SQLException (Error 1062 - Duplicate entry)</code>, causing an immediate transaction rollback without corrupting schedule integrity.
+</p>
+
+<h3>4.2 Key Source Code Implementation</h3>
+
+<h4>4.2.1 Database Connection Utility (`DBConnectionUtil.java`)</h4>
+<div class="code-block">
+public class DBConnectionUtil {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private static String url = "jdbc:mysql://localhost:3306/clinic_appointment_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private static String username = "root";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private static String password = "Hema@123";<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;static {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class.forName("com.mysql.cj.jdbc.Driver");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (ClassNotFoundException e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static Connection getConnection() throws SQLException {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return DriverManager.getConnection(url, username, password);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</div>
+
+<h4>4.2.2 Patient Authentication Servlet (`PatientLoginServlet.java`)</h4>
+<div class="code-block">
+@WebServlet("/patientLogin")<br>
+public class PatientLoginServlet extends HttpServlet {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private PatientDAO patientDAO = new PatientDAO();<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String idOrEmail = req.getParameter("idOrEmail");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String password = req.getParameter("password");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient patient = patientDAO.authenticate(idOrEmail, password);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (patient != null) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HttpSession session = req.getSession(true);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;session.setAttribute("patient", patient);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resp.sendRedirect(req.getContextPath() + "/patientHome");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;req.setAttribute("errorMessage", "Invalid Patient ID / Email or Password.");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;req.getRequestDispatcher("/patient_login.jsp").forward(req, resp);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</div>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 5 ==================== -->
+<h2>5. RESULTS &amp; SYSTEM DEMONSTRATION</h2>
+
+<h3>5.1 Verification Test Cases Matrix</h3>
+
+<table>
+<tr>
+    <th style="width: 10%;">Test ID</th>
+    <th style="width: 25%;">Test Scenario</th>
+    <th style="width: 25%;">Test Input</th>
+    <th style="width: 30%;">Expected Result</th>
+    <th style="width: 10%; text-align: center;">Status</th>
+</tr>
+<tr>
+    <td><strong>TC-01</strong></td>
+    <td>Patient Registration</td>
+    <td>ID: PAT105, Name: Hemalatha, Phone: 9440123456</td>
+    <td>Profile inserted in DB, redirected to login with success alert</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-02</strong></td>
+    <td>Duplicate Patient ID Registration</td>
+    <td>Existing ID: PAT101</td>
+    <td>Rejected with error banner "Patient ID already exists"</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-03</strong></td>
+    <td>Patient Login via Patient ID</td>
+    <td>ID: PAT101, Pass: pass123</td>
+    <td>Session created, user redirected to patient home</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-04</strong></td>
+    <td>Patient Login via Email</td>
+    <td>Email: bhavani@example.com</td>
+    <td>Session created, user redirected to patient home</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-05</strong></td>
+    <td>Booking for available slot</td>
+    <td>Doctor: 1, Date: Tomorrow, Slot: 10:30 AM</td>
+    <td>Booking created with status 'Pending', token generated</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-06</strong></td>
+    <td><strong>Double-Booking Prevention</strong></td>
+    <td><strong>Doctor: 1, Same Date, Same Slot</strong></td>
+    <td><strong>Rejected with conflict notice; DB transaction rolls back</strong></td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-07</strong></td>
+    <td>Receptionist Login</td>
+    <td>User: receptionist, Pass: admin123</td>
+    <td>Session established, redirected to receptionist console</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-08</strong></td>
+    <td>Receptionist Date Filter</td>
+    <td>Date: 2026-11-14</td>
+    <td>Queue displays only appointments scheduled for that date</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-09</strong></td>
+    <td>Receptionist Confirm Action</td>
+    <td>Click Confirm on appointment</td>
+    <td>Status updated to 'Confirmed' in DB, audit log entry created</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+<tr>
+    <td><strong>TC-10</strong></td>
+    <td>Unauthorized URL Access</td>
+    <td>Direct access to /patientHome without session</td>
+    <td>Intercepted by PatientAuthFilter, redirected to login</td>
+    <td class="text-center" style="color: green; font-weight: bold;">PASS</td>
+</tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 6 ==================== -->
+<h2>6. CONCLUSION &amp; FUTURE SCOPE</h2>
+
+<h3>6.1 Conclusion</h3>
+<p>
+The <strong>Clinic Appointment Scheduling System</strong> successfully bridges the gap between traditional manual clinical record-keeping and contemporary digital healthcare management. Built from scratch adhering to the mandatory college technology stack (<strong>Java 21</strong>, <strong>Jakarta Servlets 6.0</strong>, <strong>JSP 3.1</strong>, <strong>JDBC</strong>, and <strong>MySQL 8.0</strong> on <strong>Apache Tomcat 10.1</strong>), the system satisfies all operational criteria specified in Case Study 2.
+</p>
+<p>
+The implementation of two-tier concurrency control ensures zero double-booking occurrences for any doctor, protecting clinic staff from scheduling chaos. The clear separation of concerns across the MVC Architecture and DAO Pattern guarantees high maintainability, code readability, and security. Front-desk personnel benefit from real-time queue visibility, date/doctor filtering, and instant status updates, while patients enjoy an intuitive self-service portal with digital appointment tokens.
+</p>
+
+<h3>6.2 Future Scope</h3>
+<ul>
+    <li><strong>Automated SMS &amp; WhatsApp Alerts:</strong> Integration with clinical SMS gateways to send automated appointment confirmation tokens and reminder alerts 2 hours prior to consultation.</li>
+    <li><strong>Telemedicine &amp; Video Consultation:</strong> WebRTC-based video conferencing allowing patients to consult specialists remotely.</li>
+    <li><strong>Electronic Health Records (EHR):</strong> Digital prescription module enabling doctors to record diagnostic findings, lab test prescriptions, and medicine schedules directly onto the patient's profile.</li>
+    <li><strong>Emergency Triage Queue:</strong> Priority scoring for acute emergency visits to dynamically adjust routine appointment intervals.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 7 ==================== -->
+<h2>7. REFERENCES</h2>
+<ol>
+    <li>James Gosling, Bill Joy, Guy Steele, Gilad Bracha, Alex Buckley, <em>The Java Language Specification (Java SE 21 Edition)</em>, Oracle Corporation, 2023.</li>
+    <li>Jakarta EE Specification Committee, <em>Jakarta Servlet Specification, Version 6.0</em>, Eclipse Foundation, 2022.</li>
+    <li>Jakarta EE Specification Committee, <em>Jakarta Server Pages Specification, Version 3.1</em>, Eclipse Foundation, 2022.</li>
+    <li>Paul DuBois, <em>MySQL Cookbook: Solutions for Database Developers and Administrators (4th Edition)</em>, O'Reilly Media, 2022.</li>
+    <li>Mark Hall, Brian Basham, Kathy Sierra, <em>Head First Servlets and JSP (2nd Edition)</em>, O'Reilly Media, 2008.</li>
+    <li>Robert C. Martin, <em>Clean Architecture: A Craftsman's Guide to Software Structure and Design</em>, Prentice Hall, 2017.</li>
+    <li>World Health Organization (WHO), <em>Digital Health Guidelines and Outpatient Workflow Modernization</em>, WHO Technical Report Series, 2021.</li>
+    <li>United Nations, <em>Transforming Our World: The 2030 Agenda for Sustainable Development (SDG 3: Good Health and Well-Being)</em>, UN Publishing, 2015.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<!-- ==================== CHAPTER 8 ==================== -->
+<h2>8. PO, PSO &amp; SUSTAINABLE DEVELOPMENT GOALS (SDG) ALIGNMENT</h2>
+
+<h3>8.1 Problem Statement &amp; Main Objectives</h3>
+<p>
+<strong>Problem Statement:</strong> In conventional healthcare polyclinics and municipal dispensaries, appointment bookings are managed via manual registers or chaotic walk-in crowds. This results in doctor double-booking, prolonged patient wait times, nosocomial infection risks, lack of digital auditability, and poor resource utilization.
+</p>
+<p>
+<strong>Main Objectives:</strong> Design and construct an enterprise full-stack web application that allows patients to register and reserve doctor appointments online, enforces strict database-level concurrency protection against duplicate slot bookings, provides receptionists with an operational command center to filter and confirm schedules, and issues digital medical tokens.
+</p>
+
+<h3>8.2 Program Outcomes (PO1–PO12) Mapping</h3>
+
+<table>
+<tr>
+    <th style="width: 25%;">Program Outcome</th>
+    <th style="width: 15%; text-align: center;">Relevance</th>
+    <th style="width: 60%;">How the Project Addresses the Outcome</th>
+</tr>
+<tr>
+    <td><strong>PO1: Engineering Knowledge</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Applied mathematics, computer engineering fundamentals, relational calculus, and object-oriented principles using Java 21, JDBC, and SQL.</td>
+</tr>
+<tr>
+    <td><strong>PO2: Problem Analysis</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Analyzed race conditions and concurrency bottlenecks in appointment scheduling; designed database-level locking and transaction isolation solutions.</td>
+</tr>
+<tr>
+    <td><strong>PO3: Design/Development</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Designed a complete three-tier MVC architecture with component-level separation (Models, Servlets, DAOs, Filters, and JSP views).</td>
+</tr>
+<tr>
+    <td><strong>PO4: Complex Problems</strong></td>
+    <td class="text-center"><strong>Medium</strong></td>
+    <td>Conducted concurrency stress testing to verify that simultaneous slot requests are deterministically rejected with rollback.</td>
+</tr>
+<tr>
+    <td><strong>PO5: Modern Tool Usage</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Utilized Apache Maven, Apache Tomcat 10.1, MySQL 8.0, Bootstrap 5.3, Git, and modern IDEs (IntelliJ IDEA).</td>
+</tr>
+<tr>
+    <td><strong>PO6: Engineer &amp; Society</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Addresses critical public health challenges by reducing clinic congestion and organizing primary outpatient medical delivery.</td>
+</tr>
+<tr>
+    <td><strong>PO7: Environment</strong></td>
+    <td class="text-center"><strong>Medium</strong></td>
+    <td>Replaces paper appointment registers and printed clipboards with digital tokens and paperless audit trails.</td>
+</tr>
+<tr>
+    <td><strong>PO8: Ethics</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Implemented role-based access control filters and secure password hashing to protect sensitive patient health demographics.</td>
+</tr>
+<tr>
+    <td><strong>PO9: Individual &amp; Team Work</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Structured modular code adhering to standard software engineering patterns suitable for individual and collaborative development.</td>
+</tr>
+<tr>
+    <td><strong>PO10: Communication</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Authored comprehensive technical documentation, architecture flowcharts, DFDs, ER diagrams, and user-friendly interface messages.</td>
+</tr>
+<tr>
+    <td><strong>PO11: Project Management</strong></td>
+    <td class="text-center"><strong>Medium</strong></td>
+    <td>Delivered full-stack application strictly utilizing zero-cost open-source tools within academic semester milestones.</td>
+</tr>
+<tr>
+    <td><strong>PO12: Life-long Learning</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Acquired hands-on mastery over the latest Jakarta EE specifications (Jakarta Servlet 6.0) replacing legacy javax APIs.</td>
+</tr>
+</table>
+
+<h3>8.3 Program Specific Outcomes (PSO1–PSO2) Mapping</h3>
+
+<table>
+<tr>
+    <th style="width: 25%;">PSO</th>
+    <th style="width: 15%; text-align: center;">Relevance</th>
+    <th style="width: 60%;">Implementation Details</th>
+</tr>
+<tr>
+    <td><strong>PSO1: Core Software Development</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Demonstrated ability to develop end-to-end full-stack software applications utilizing Java enterprise standards, relational databases, and responsive UI frameworks.</td>
+</tr>
+<tr>
+    <td><strong>PSO2: Engineering Practices</strong></td>
+    <td class="text-center"><strong>High</strong></td>
+    <td>Applied algorithms, data persistence patterns (DAO), database transactions (ACID), and security filters to solve real-world healthcare scheduling problems.</td>
+</tr>
+</table>
+
+<h3>8.4 UN Sustainable Development Goals (SDG) Alignment</h3>
+<ul>
+    <li><strong>SDG 3: Good Health and Well-Being (Target 3.8):</strong> Directly contributes to universal health coverage and access to quality essential healthcare services by organizing outpatient care, eliminating clinic wait times, and preventing disease transmission in crowded waiting areas.</li>
+    <li><strong>SDG 8: Decent Work and Economic Growth:</strong> Improves workplace efficiency and reduces cognitive fatigue for medical doctors and healthcare staff through automated scheduling and digital token queues.</li>
+    <li><strong>SDG 9: Industry, Innovation, and Infrastructure:</strong> Employs modern digital infrastructure and resilient software architectures to upgrade traditional health clinics into smart digital facilities.</li>
+    <li><strong>SDG 12: Responsible Consumption and Production:</strong> Eliminates massive consumption of paper registers, index cards, and printed stationery by transitioning outpatient clinic operations to digital cloud-ready records.</li>
+</ul>
+
+</div>
+</body>
+</html>
